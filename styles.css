@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--bg-green);
+}
+
+/*Variable Colors*/
+
+:root {
+    --bg-green: #CFF4D1;
+    --teal: #359D9E;
+    --navy: #215273;
+    --green: #55C595;
+    --yellow: #E4E3AA;
+}
+
+/*General Styles*/
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    background-image: url('assets/bg-wave.svg');
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+/*Navigation Bar*/
+
+.nav-wrapper {
+    justify-content: space-evenly;
+    gap: 10rem;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+
+.nav-wrapper ul {
+    gap: 2.5rem;
+    background-color: var(--green);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+}
+
+.nav-wrapper button {
+    font-size: 1.3rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
