@@ -8,6 +8,12 @@ body{
     font-size: 16px;
     line-height: 1.5;
     font-family: 'Figtree', sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(assets/images/pomodoro-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /*Variable Colors*/
@@ -21,20 +27,6 @@ body{
 
 /*General Styles*/
 
-.background {
-    aspect-ratio: 960/300;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url('assets/images/bg-pomodoro.svg');
-}
-
 .flex {
     display: flex;
     align-items: center;
@@ -42,7 +34,7 @@ body{
 
 a {
     text-decoration: none;
-    color: #000;
+    color: var(--white);
 }
 
 ul {
@@ -54,11 +46,17 @@ ul {
 
 .header-wrapper {
     justify-content: space-between;
+    align-items: center;
     max-width: 90%;
     margin: 0 auto;
-    color: var(--navy);
-    font-size: 1.5rem;
-    padding: 1.5rem 0;
+    color: var(--white);
+    font-size: 1.3rem;
+    padding: 2rem 0;
+}
+
+.logo {
+    display: flex;
+    gap: 0.5rem;
 }
 
 .header-wrapper ul {
@@ -66,21 +64,19 @@ ul {
 }
 
 .header-wrapper button {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     background: transparent;
     cursor: pointer;
 }
 
 .header-wrapper a, .header-wrapper button {
-    color: var(--navy);
-    border: 2px solid var(--navy);
+    color: var(--white);
+    border: 1px solid var(--white);
     padding: 0.3rem 1rem;
     border-radius: 30px;
-    transition: background-color 0.5s ease;
-    transition: color 0.8s ease;
+    transition: background-color 0.3s ease;
 }
 
-.header-wrapper a:hover, .header-wrapper button:hover {
-    background-color: rgba(41, 43, 81, 0.9);
-    color: var(--white);
+.header-wrapper a:hover, .header-wrapper button:hover, .header-wrapper a:focus {
+    background-color: rgba(255, 255, 255, 0.2);
 }
