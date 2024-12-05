@@ -11,7 +11,7 @@ body{
     height: 100vh;
     color: var(--white);
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(assets/images/pomodoro-bg.jpg);
+    url('assets/images/pomodoro-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
